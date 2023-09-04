@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Movie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <nav class="shadow-sm navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#000000;">
+        <div class="container">
+          <a class="navbar-brand" href="#">IngfoFilem</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" aria-current="page" href="#">Category</a>
+              </li>
+              <li class="nav-item">
+                <form id="searcher" class="d-flex" role="search">
+                    <input id="searchBox" class="form-control me-2" type="search" placeholder="Movie Tittle.." aria-label="Search">
+                    <div id="searchButton" class="srcBTN" onclick="getSearchValue()" type="submit">Search</div>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- Movie List Search Page -->
+
+      <div class="container mt-5 pt-5 text-center">
+        <h2 id="searchTittle">Search : " "</h2>
+      </div>
+      <hr /><br />
+
+<!-- Movie List Page -->
+
+    <div class="container justify-contain-center">
+      <div id="cardGenerator" class="row">
+
+      </div>
+    </div>
+
+    <!-- Modal Popup -->
+<div id="popUPpage"></div>
+
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
